@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<!-- CookieFirst Consent Banner (muss erstes Element im <head> sein) -->
+<script src="https://consent.cookiefirst.com/sites/ads.rehab-five.com-c57f4a38-bb6e-4ba0-8ad3-2bd4c7fcbab2/consent.js"></script>
+<!-- Google Analytics 4 — wird erst nach Consent aktiviert -->
+<script type="text/plain" data-cookiefirst-category="performance" async src="https://www.googletagmanager.com/gtag/js?id=G-C75C9ZMSEJ"></script>
+<script type="text/plain" data-cookiefirst-category="performance">
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-C75C9ZMSEJ', { anonymize_ip: true });
+</script>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>REHAB FIVE — Landing Pages Preview</title>
@@ -137,6 +148,7 @@ body{font-family:'Barlow',system-ui,sans-serif;color:#1A1A1A}
 <footer class="bg-ink-100 mt-12 py-8 text-center text-sm text-ink-700">
   <p>REHAB FIVE — interne Vorschau · Stand: <span id="d"></span></p>
   <p class="mt-1 text-xs">Hinweis: Buchungs-Buttons (Docmedico) funktionieren auf dieser Vorschau evtl. nicht — auf der Live-Seite arbeiten sie korrekt.</p>
+  <p class="mt-2 text-xs"><a href="#" data-cookiefirst-action="open-preferences" class="underline hover:text-ink-900">Cookie-Einstellungen</a></p>
   <script>document.getElementById('d').textContent=new Date().toLocaleDateString('de-DE')</script>
 </footer>
 </body>
